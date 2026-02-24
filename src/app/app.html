@@ -1,0 +1,147 @@
+<main class="invitation">
+  <div class="invitation__title-wrap">
+    <h1 class="invitation__title">Приглашение на свадьбу</h1>
+    <p class="invitation__subtitle">АРИНА &nbsp;и&nbsp; ДАНИЛА · 11 июля 2026</p>
+  </div>
+
+  <section class="invitation__grid">
+      <div class="polaroid">
+        <div class="polaroid__card">
+          <img src="assets/danil.png" width="120" height="180">
+          <div>Жених</div>
+        </div>
+        <img class="polaroid__plus" src="assets/flags.png" width="100" height="45">
+        <div class="polaroid__card">
+          <img src="assets/arina.png" width="120" height="180">
+          <div>Невеста</div>
+        </div>
+        </div>
+    <article class="invitation__column invitation__column--left">
+        <p class="card__text">
+          Дорогие родные и друзья!<br><br> Мы счастливы пригласить вас разделить с нами день нашей свадьбы
+          и стать частью нашей истории любви.
+        </p>
+    </article>
+
+    <article class="invitation__column invitation__column--center">
+      <div class="card card--center">
+        <h3 class="location__title">Как пройдет этот день</h3>
+        <h2 class="section__title section__title--small">11 июля 2026</h2>
+
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__time">16:00</div>
+            <div class="timeline__title">Торжественная роспись</div>
+            <div class="timeline__place">ЗАГС (Карла Либкнехта, 3)</div>
+            <p class="timeline__note">
+              Просим приехать за 15–20 минут до начала церемонии, чтобы спокойно собраться и занять места.
+            </p>
+          </article>
+
+          <article class="timeline__item">
+            <div class="timeline__time">16:30</div>
+            <div class="timeline__title">Прогулка и фотосессия</div>
+            <div class="timeline__place">Красивые виды рядом с ЗАГСом</div>
+            <p class="timeline__note">
+              Общие фотографии, объятия и первые фото в статусе мужа и жены.
+            </p>
+          </article>
+
+          <article class="timeline__item">
+            <div class="timeline__time">17:30</div>
+            <div class="timeline__title">Фуршет и банкет</div>
+            <div class="timeline__place">Ресторан «Супра» (ул. Дзерджинского, 2)</div>
+            <p class="timeline__note">
+              Вкусный ужин, бокалы за любовь и наш маленький концерт счастья. Мы позаботимся о такси от ЗАГСа до ресторана для всех гостей.
+            </p>
+          </article>
+
+          <article class="timeline__item">
+            <div class="timeline__time">21:00</div>
+            <div class="timeline__title">Финал вечера</div>
+            <div class="timeline__place">Ресторан</div>
+            <p class="timeline__note">
+              Финальные танцы, десерт и прощальные объятия. Время может немного меняться по ходу вечера.
+            </p>
+          </article>
+        </div>
+
+        <div class="location">
+          <h3 class="location__title">Локация</h3>
+          <p class="location__text">
+            Здесь кликабельные ссылки с местоположением для вашего удобства:<br>
+            <a class="location__link" href="https://yandex.ru/maps/-/CPeJyD9h">Загс</a>
+            <br>
+            <a class="location__link" href="https://yandex.ru/maps/-/CPeJ5F8o">Ресторан</a>
+          </p>
+        </div>
+      </div>
+    </article>
+    <div class="section__divider">
+      <img src="assets/flowers.png" width="100" height="55">
+    </div>
+
+    <article class="invitation__column invitation__column--right">
+      <div class="card card--right">
+        <div class="section__subtitle">Дресс‑код</div>
+        <h2 class="section__title section__title--small">Сациви & Солнце</h2>
+
+        <p class="muted">
+          Чтобы наши фото были гармоничными, добавляем в нашу палитру солнечный оранжевый. Остальные цвета оставляем спокойными, чтобы никто не перебивал главное блюдо вечера — нашу любовь.
+        </p>
+
+        <div class="pill-list">
+          <div class="pill pill_black"></div>
+          <div class="pill pill_orange"></div>
+          <div class="pill pill_olive"></div>
+          <div class="pill pill_beige"></div>
+          <div class="pill pill_lemon"></div>
+          <div class="pill pill_grey"></div>
+        </div>
+
+        <div class="card-right__divider"></div>
+
+        <div class="section__subtitle">Меню</div>
+        <p class="muted">
+          Гостей ждёт щедрое грузинское застолье с ароматными горячими блюдами, пряными закусками и, конечно, свежей зеленью. Готовьте желудки, будет вкусно! Если вы не едите мясо или у вас аллергия — дайте нам знать, мы спрячем для вас что-то особенное.
+        </p>
+
+        <div class="card-right__divider"></div>
+
+        <div class="section__subtitle">Подарки</div>
+        <p class="muted">
+          Ваше присутствие — главный подарок. Если вы захотите нас порадовать, мы будем благодарны вкладу
+          в наш семейный бюджет.
+        </p>
+
+        <div class="card-right__divider"></div>
+
+        <div class="section__subtitle">До встречи осталось</div>
+        <div class="countdown__grid">
+          <div class="countdown__item">
+            <div class="countdown__value">{{ countdownDays }}</div>
+            <div class="countdown__label">дней</div>
+          </div>
+          <div class="countdown__item">
+            <div class="countdown__value">{{ countdownHours }}</div>
+            <div class="countdown__label">часов</div>
+          </div>
+          <div class="countdown__item">
+            <div class="countdown__value">{{ countdownMinutes }}</div>
+            <div class="countdown__label">минут</div>
+          </div>
+          <div class="countdown__item">
+            <div class="countdown__value">{{ countdownSeconds }}</div>
+            <div class="countdown__label">секунд</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <p class="footer-note footer-note--bottom">
+    Мы очень ждём встречи с вами в этот день. Ваша поддержка, улыбки и объятия — лучшая часть
+    нашего праздника.
+  </p>
+  <img src="assets/xo.png" width="90" height="45">
+</main>

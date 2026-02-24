@@ -1,0 +1,374 @@
+.invitation {
+  max-width: 960px;
+  width: 100%;
+  //background: rgba(20, 0, 4, 0.92);
+  backdrop-filter: blur(18px);
+  border-radius: 32px;
+  padding: 32px 10px 36px;
+  //box-shadow:
+  //  0 30px 80px rgba(0, 0, 0, 0.6),
+  //  0 0 0 1px rgba(255, 255, 255, 0.04);
+  //border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f37445;
+}
+
+.invitation__title-wrap {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.invitation__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 34px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #f37445;
+  margin: 0 0 4px;
+}
+
+.invitation__subtitle {
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #f37445;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .invitation {
+    padding: 40px 48px 48px;
+  }
+}
+
+.invitation__grid {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+}
+
+
+.invitation__column {
+  display: flex;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section:last-of-type {
+  margin-bottom: 0;
+}
+
+.card--left {
+  background:
+    radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.15) 0, transparent 55%),
+    linear-gradient(150deg, #fff3f3, #ffe0e7);
+  border-radius: 26px;
+  padding: 20px 20px 22px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+  color: var(--text-main);
+  width: 100%;
+}
+
+.card-left__photo {
+  height: 180px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  background: #d9d9d9;
+  border: 2px dashed rgba(63, 0, 11, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(63, 0, 11, 0.7);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.card-left__photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.card-left__names {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.card-left__label {
+  position: absolute;
+  top: -16px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+}
+
+.card-left__label--right {
+  right: 0;
+}
+
+.card-left__title {
+  font-family:  'Cormorant Garamond', serif;
+  font-size: 34px;
+  margin: 8px 0 0;
+}
+
+.card-left__date-heart {
+  display: flex;
+  justify-content: center;
+  margin: 14px 0 10px;
+}
+
+.card-left__heart {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 20%, #ffdde5 0, #ff6b81 40%, #3f000b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.card-left__heart-date {
+  color: #fff5f5;
+  font-size: 16px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-size: 16px;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.countdown__title {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 11px;
+  color: #ffd0da;
+  margin-bottom: 14px;
+}
+
+.countdown__grid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.countdown__item {
+  flex: 1 1 60px;
+  min-width: 60px;
+  text-align: center;
+  padding: 10px 8px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.countdown__value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.countdown__label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #ffa175;
+}
+
+.countdown__note {
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--text-main);
+}
+
+/* Обращение */
+.card {
+  border-radius: 24px;
+  color: var(--text-main);
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 24px 26px 26px;
+  }
+}
+
+.section__divider {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section__title {
+  font-family:  'Cormorant Garamond', serif;
+  font-size: 36px;
+  margin: 0 0 12px;
+  color: #f5f3e6;
+}
+
+.section__subtitle {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--accent-dark);
+  margin-bottom: 12px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 6px;
+}
+
+.pill {
+  padding: 6px 10px;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  height: 28px;
+  width: 28px;
+  background: #ffe5ea;
+  white-space: nowrap;
+  &_black {
+    background: #000000;
+  }
+
+  &_orange {
+    background: var(--text-main);
+  }
+
+  &_olive {
+    background: #9da181;
+  }
+
+  &_beige {
+    background: #cbab8a;
+  }
+
+  &_lemon {
+    background: var(--bg);
+  }
+
+  &_grey {
+    background: #514f4f;
+  }
+}
+
+ul {
+  margin: 6px 0 10px 18px;
+  padding: 0;
+  font-size: 14px;
+}
+
+/* Расписание */
+.timeline {
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 640px) {
+  .timeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.timeline__item {
+  position: relative;
+  padding: 16px 16px 16px 18px;
+  border-radius: 20px;
+  //background: linear-gradient(140deg, #fff3f3, #ffe5ea);
+  border: 1px solid #5c070240;
+  //box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+
+.timeline__time {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent-dark);
+  margin-bottom: 6px;
+}
+
+.timeline__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--accent-dark);
+}
+
+.timeline__place {
+  font-size: 13px;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.timeline__note {
+  font-size: 14px;
+  color: var(--accent-dark);
+}
+
+.footer-note {
+  margin-top: 18px;
+  font-size: 12px;
+  text-align: center;
+  color: var(--text-main);
+}
+
+.footer-note--bottom {
+  margin-top: 28px;
+}
+
+.section__title--small {
+  font-size: 22px;
+  color: var(--text-main)
+}
+
+.card--center,
+.card--right {
+  width: 100%;
+}
+
+.location {
+  margin-top: 18px;
+}
+
+.location__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent-dark);
+  margin-bottom: 6px;
+  border-bottom: 1px #5c070240 solid;
+}
+
+.location__text {
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+.location__link {
+  font-size: 14px;
+  color: var(--accent-dark);
+}
+
+.card-right__divider {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  margin: 14px 0;
+}

@@ -1,0 +1,26 @@
+.polaroid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+
+
+  &__card {
+    background-color: #fff;
+    height: 235px;
+    width: 160px;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow:
+      0 10px 30px #69301b82,
+      0 0 0 1px rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  &__plus {
+    margin: 12px 0;
+  }
+}

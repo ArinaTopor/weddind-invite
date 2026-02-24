@@ -1,0 +1,30 @@
+/* Global base styles for the wedding invitation */
+
+:root {
+  --bg: #585651;
+  --accent: #ff4b5c;
+  --accent-dark: #5c0702;
+  --text-main: #f37445;
+  //--text-muted: #b36a7a;
+  --text-muted: #5c0702;
+  --text: #f5f3e6;
+  --card-bg: #fff3f3;
+  --border-soft: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Wix Madefor Display', 'Cormorant Garamond', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+  //background: rgba(20, 0, 4, 0.92);
+  background: #f5f3e6;
+  color: var(--text-main);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  padding: 24px 12px;
+}
